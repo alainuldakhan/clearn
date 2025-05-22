@@ -1,0 +1,21 @@
+.navItem-container a {
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.navItem-container a {
+  text-decoration: none;
+  color: var(--secondary-text-color);
+}
+
+.navItem-container a:hover {
+  color: var(--primary-text-color);
+}
+
+.navItem-container a.active {
+  font-weight: bold;
+  text-decoration: underline;
+  text-underline-offset: 10px;
+  text-decoration-color: var(--primary-text-color);
+}

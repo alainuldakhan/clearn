@@ -1,0 +1,57 @@
+.inputbox {
+  width: 27.875rem;
+  height: 3.0625rem;
+  flex-shrink: 0;
+  border-radius: 0.625rem;
+  border: 1px solid var(--secondary-text-color);
+  background: var(--background-color-two);
+  color: var(--secondary-text-color);
+
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-left: 70px;
+}
+.inputbox-container {
+  position: relative;
+  width: 100%;
+}
+.input-icon {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+  background: none;
+}
+[data-theme="dark"] .input-icon {
+  filter: invert(1);
+}
+.inputbox-container input {
+  width: 100%;
+  height: 3rem;
+  /* flex-shrink: 0; */
+  border: 1px solid var(--primary-text-color);
+  /* border-radius: 0.4375rem; */
+  background: var(--background-color-two);
+  /* color: yellow; */
+}
+
+.inputbox-container input:-webkit-autofill {
+  background-color: var(--background-color-two) !important;
+  box-shadow: 0 0 0px 100px var(--background-color-two) inset !important;
+  color: var(--secondary-text-color) !important; /* Ensures text is white */
+  transition: background-color 5000s ease-in-out 0s, color 5000s ease-in-out 0s; /* Prevent browser reset */
+}
+
+.inputbox-container input:-webkit-autofill:focus {
+  background-color: var(--background-color-two) !important;
+  box-shadow: 0 0 0px 100px var(--background-color-two) inset !important;
+  color: var(--secondary-text-color) !important;
+}
+
+.inputbox-container input:-webkit-autofill:hover {
+  background-color: var(--background-color-two) !important;
+  box-shadow: 0 0 0px 100px var(--background-color-two) inset !important;
+  color: var(--secondary-text-color) !important;
+}

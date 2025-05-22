@@ -1,0 +1,84 @@
+.sidebar-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+  width: 16rem;
+  min-width: 16rem;
+  max-width: 16rem;
+  height: 100vh;
+  overflow: hidden;
+  background-color: var(--background-color-two);
+  color: var(--primary-text-color);
+  padding: 1rem;
+  padding-top: 3rem;
+}
+
+.eduverse-logo {
+  background-color: var(--background-color-two);
+  max-width: 100%;
+  height: auto;
+}
+
+.eduverse-logo img {
+  background-color: var(--background-color-two);
+}
+
+.section-list {
+  width: 100%;
+  background-color: var(--background-color-two);
+  animation: fadeIn 0.5s ease-in forwards;
+}
+
+.section-list ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  /* font-size: 1rem; */
+  padding: 0;
+  margin: 0;
+  background-color: var(--background-color-two);
+}
+
+.section-list ul li {
+  width: 100%;
+  padding: 0.625rem;
+  text-align: center;
+  cursor: pointer;
+  background-color: var(--background-color-two);
+}
+
+.section-list ul li a {
+  text-decoration: none;
+  color: var(--secondary-text-color);
+  display: block;
+  background-color: var(--background-color-two);
+  transition: color 0.2s ease;
+}
+
+.section-list ul li a:hover {
+  color: var(--primary-text-color);
+}
+
+.section-list ul li a:active {
+  color: var(--primary-text-color);
+}
+
+.active {
+  color: var(--primary-text-color) !important;
+  /* font-weight: bold; */
+  position: relative;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
